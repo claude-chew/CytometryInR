@@ -21,6 +21,7 @@ install.packages("Rtsne")
 install.packages("uwot")
 
 # Following packages require BiocManager to be loaded
+BiocManager::install("ComplexHeatmap")
 install("PeacoQC")
 install("remotes")
 BiocManager::install("flowCore")

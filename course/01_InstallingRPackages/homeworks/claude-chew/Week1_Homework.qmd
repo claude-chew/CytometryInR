@@ -3,8 +3,9 @@ title: "Week1 Homework"
 format: html
 ---
 
-Problem 1: PeacoQC functions:
+# Problem 1: PeacoQC functions:
 
+# These are all arguments, not functions
 ff
 channels
 determine_good_cells
@@ -27,8 +28,8 @@ peak_removal
 min_nr_bins_peakdetection
 time_channel_parameter
 
-PeacoQC also has a Heatmap function - PeacoQCHeatmap() that contains:
-
+# PeacoQC also has a Heatmap function - PeacoQCHeatmap() that contains:
+# These are all aguments, not functions
 report_location
 show_values
 show_row_names
@@ -41,18 +42,20 @@ You can also plot the deleted cells from running PeacoQC using PlotPeacoQC()
 
 Preprocessing functions to PeacoQC are:
 
+PeacoQC
+PeacoQCHeatmap
+PlotPeacoQC
+RemoveDoublets()
 RemoveMargins()
-flowCore::compensate()
-flowCore::transform()
-flowCore::estimateLogicle()
 
-Problem 2: 1. How many cytometry packages are currently in Bioconductor and the 2. author/maintainer with the most contributed cytometry R packages. 3. Couple of packages to explore later in the course
+
+# Problem 2: 1. How many cytometry packages are currently in Bioconductor and the 2. author/maintainer with the most contributed cytometry R packages. 3. Couple of packages to explore later in the course
 
 1. There are 69 cytometry packages currently in Bioconductor
 2.  Mike Jiang
 3. cytoMEM, FlowSOM
 
-Problem 3: Using pak to install “broom”, “cytoMEM”, “DillonHammill/CytoExploreR”.
+# Problem 3: Using pak to install “broom”, “cytoMEM”, “DillonHammill/CytoExploreR”.
 
 First thing I had to do was install pak itself from CRAN using install.packages("pak")
 Then, using pak to install these packages meant that I had to call the pkg_install function from pak using the pak::pkg_install() command. It generated a different string of installation commands for each package installed.
@@ -68,8 +71,13 @@ pak::pkg_install("broom")
 pak::pkg_install("cytoMEM")
 
 
+
 # Install superheat 1.0.0 from GitHub
 pak::pkg_install("rlbarter/superheat")
 pak::pkg_install("DillonHammill/CytoExploreR")
 ```
 
+
+![Installing Broom](installing_broom.png)
+![Installing cytoMEM](installing_cytoMEM.png)
+![Installing CytoExploreR](installing_CytoExploreR.png)
